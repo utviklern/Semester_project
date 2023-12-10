@@ -1,3 +1,9 @@
+* { margin: 0; padding: 0;}
+
+main {
+
+}
+
 .hero-desktop {
 
 }
@@ -7,14 +13,14 @@
 }
 
 .page-h1 {
-
+    
 }
 
 #quick-nav {
 
 }
 
-#quick-nav-home{ 
+#quick-nav-home { 
 
 }
 
@@ -46,5 +52,5 @@
 }
 
 footer {
-    
+
 }
