@@ -1,42 +1,122 @@
 * { margin: 0; padding: 0;}
 
+body{ 
+    background-image: url(/media/images/home/planet-stars.jpg);
+    background-size: cover;
+}
+
 main {
+    background: rgba(0, 0, 0, .7);
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    width: calc(100% - 40rem);
+    margin: 0 auto;
 
 }
 
-.hero-desktop {
+/** variables **/
+:root {
+    --white: #F4FFE3;
 
+}
+/** end **/
+
+/** text **/
+.page-h1{
+    font-size: 3rem;
+}
+
+.page-h1, .page-h2-content {
+    text-align: center;
+    margin: 40px 0 40px 0;
+    color: #F4FFE3;
+}
+
+.page-h2-content { 
+    font-size: 2rem;
+}
+
+.page-p-content {
+    color: #F4FFE3;
+    font-size: 1.5rem;
+}
+/** end **/
+
+
+/** navigation desktop **/
+.desktop-navigation ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: yellow;
+    list-style-type: none;
+}
+
+.desktop-navigation a, a:visited {
+    color: black;
+}
+
+.desktop-navigation ul:first-child {
+
+}
+
+.desktop-navigation a {
+    text-decoration: none;
+}
+/** end **/
+
+/** hero desktop **/
+.hero-desktop {
+    
 }
 
 .hero-mobile {
 
 }
+/** end **/
 
-.page-h1 {
-    
-}
-
+/** quick nav home **/
 #quick-nav {
-
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
-#quick-nav-home { 
-
+#quick-nav-home {
+    width: 100%;
 }
 
-.circle-picture-big {
-
-}
-.circle-picture {
-
-}
-
-.page-h2-content { 
-
+#navigation-bubbles ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--white);
 }
 
-.seperation-line {
+#circle-picture-big img{
+    max-width: 10rem;
+    max-height: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
 
+#circle-picture img{
+    max-width: 10rem;
+    max-height: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+/** **/
+
+
+.separation-line {
+    color: var(--white);
+ border-top: 3px solid var(--white);
+ width:;
 }
 
 .content {
