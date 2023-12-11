@@ -13,12 +13,16 @@ main {
 
 }
 
+
+
 /** variables **/
 :root {
     --white: #F4FFE3;
-
+    --arial:
 }
 /** end **/
+
+
 
 /** text **/
 .page-h1{
@@ -40,6 +44,7 @@ main {
     font-size: 1.5rem;
 }
 /** end **/
+
 
 
 /** navigation desktop **/
@@ -67,6 +72,8 @@ main {
 }
 /** end **/
 
+
+
 /** hero desktop **/
 .hero-desktop {
     
@@ -77,40 +84,70 @@ main {
 }
 /** end **/
 
+
+
 /** quick nav home **/
 #quick-nav {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
+    margin-bottom: 100px;
 }
 
-#quick-nav-home {
-    width: 100%;
-}
 
-#navigation-bubbles ul{
+#navigation-bubbles {
     display: flex;
     flex-direction: row;
     list-style: none;
     justify-content: space-around;
     align-items: center;
     color: var(--white);
+    text-align: center;
+    transition: .5 ease-in-out;
 }
 
-#circle-picture-big img{
-    max-width: 10rem;
-    max-height: 10rem;
-    border-radius: 50%;
-    overflow: hidden;
+#navigation-bubbles a:hover{
+    transform: scale(1.10);
 }
 
-#circle-picture img{
-    max-width: 10rem;
-    max-height: 10rem;
-    border-radius: 50%;
-    overflow: hidden;
+#navigation-bubbles a {
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--white);
 }
-/** **/
+
+#navigation-bubbles a img {
+    border-radius: 50%;
+    max-width: 10rem;
+
+}
+
+
+
+#kids-qnav, #involved-qnav, #visit-qnav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qnav-img-txt {
+ position: absolute;
+ top: 70%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ pointer-events: none;
+}
+
+
+}
+
+
+
+
+
+
+/** end **/
 
 
 .separation-line {
@@ -132,5 +169,34 @@ main {
 }
 
 footer {
-
+color: var(--white);
+text
 }
+
+
+
+@media screen and (max-width: 1187px) {
+
+    main {
+        width: calc(100% - 30rem);
+}
+
+    #navigation-bubbles {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1187px) {
+    main {
+        width: calc(100% - 30rem);
+    }
+
+    }
+
+
+    @media screen and (max-width: 800px) {
+        main {
+            width: calc(100% - 10rem);
+        }
+    
+        }
