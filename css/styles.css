@@ -45,6 +45,7 @@ main {
 .page-p-content {
     color: #F4FFE3;
     font-size: 1.5rem;
+    margin: 1.5rem 0;
 }
 
 /* end */
@@ -68,10 +69,11 @@ hr {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 80px;
-    background-color: yellow;
+    height: 100px;
+    background-color: #E0C45E;
     list-style-type: none;
 }
+
 
 .active-desktop {
     border-bottom: 3px solid rgb(57, 13, 57);
@@ -169,6 +171,15 @@ hr {
 /*  */
 .content {
 
+}
+.content-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0;
+}
+.content-image img {
+    max-width: 400px;
 }
 
 .page-content {
