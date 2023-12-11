@@ -20,7 +20,8 @@ main {
 /* variables */
 :root {
     --white: #F4FFE3;
-    --arial:
+    --comfortaa: 'Comfortaa', sans-serif;
+    --libre-font: 'Libre Baskerville', serif;
 }
 
 /* end */
@@ -91,6 +92,16 @@ hr {
 
 .desktop-navigation a {
     text-decoration: none;
+}
+
+.navbar-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-logo img {
+    max-width: 60px;
 }
 
 /* end */
