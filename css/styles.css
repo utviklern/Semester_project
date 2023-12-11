@@ -6,12 +6,13 @@
 }
 
 body{ 
-    background-image: url(/media/images/home/starry-moon-edit-center.jpg);
-    background-size: cover;
+    background-image: url(/media/images/exhibition-spaces/vecteezy_seamless-science-pattern-background-vector-with-molecular_14157493@0.5x.jpg);
+    background-size: ;
+    background-position: center;
 }
 
 main {
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .9);
     padding: 1rem 2.5rem 4rem 2.5rem;
     width: calc(100% - 40rem);
     margin: 0 auto;
@@ -76,7 +77,7 @@ hr {
 
 
 /* navigation desktop */
-.desktop-navigation ul {
+.desktop-navigation .links {
     font-family: var(--dm-sans);
     font-weight: 600;
     display: flex;
@@ -100,9 +101,7 @@ hr {
     color: black;
 }
 
-.desktop-navigation ul:first-child {
 
-}
 
 .desktop-navigation a {
     text-decoration: none;
@@ -206,7 +205,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 3rem 0;
+    margin: 3rem 3rem;
 }
 .content-image img {
     border-radius: 1rem;
@@ -261,33 +260,69 @@ footer a span{
 
 
 /* media queries */
+
+@media screen and (max-width: 1850px) {
+    main {
+        width: calc(100% - 15rem);
+    }
+}
+
 @media screen and (max-width: 1350px) {
 
     main {
-        width: calc(100% - 30rem);
+        width: calc(100% - 15rem);
 }
 
-    #navigation-bubbles {
-        flex-direction: column;
-    }
+    
 }
 
 
 
 @media screen and (max-width: 1187px) {
     main {
-        width: calc(100% - 30rem);
+        width: calc(100% - 10rem);
     }
+
 
 }
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     main {
          width: calc(100% - 10rem);
+    }
+
+    #navigation-bubbles {
+        flex-direction: column;
     }
     
 }
 
-        /* end */
+@media screen and (max-width: 850px) {
+    .desktop-navigation {
+        display: hidden;
+    }
+
+}
+
+
+@media screen and (max-width: 750px) {
+    main {
+        width: calc(100% - 4rem);
+    }
+    .content-image img {
+        max-width: 20rem;
+    }
+
+}
+
+@media screen and (max-width: 463px) {
+    main {
+        width: calc(100% - 4rem);
+    }
+    .content-image img {
+        max-width: 15rem;
+    }
+
+}
