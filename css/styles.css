@@ -1,3 +1,4 @@
+/* general styilng */
 * { margin: 0; padding: 0;}
 
 body{ 
@@ -7,24 +8,26 @@ body{
 
 main {
     background: rgba(0, 0, 0, .7);
-    padding: 1rem 2.5rem 1rem 2.5rem;
+    padding: 1rem 2.5rem;
     width: calc(100% - 40rem);
     margin: 0 auto;
-
 }
 
+/* end */
 
 
-/** variables **/
+
+/* variables */
 :root {
     --white: #F4FFE3;
     --arial:
 }
-/** end **/
+
+/* end */
 
 
 
-/** text **/
+/* text */
 .page-h1{
     font-size: 3rem;
 }
@@ -43,11 +46,22 @@ main {
     color: #F4FFE3;
     font-size: 1.5rem;
 }
-/** end **/
+
+/* end */
 
 
 
-/** navigation desktop **/
+/* seperation line */
+hr {
+    margin: 3rem 0;
+    opacity: .4;
+}
+
+/* end */
+
+
+
+/* navigation desktop */
 .desktop-navigation ul {
     display: flex;
     flex-direction: row;
@@ -57,6 +71,12 @@ main {
     height: 80px;
     background-color: yellow;
     list-style-type: none;
+}
+
+.active-desktop {
+    border-bottom: 3px solid rgb(57, 13, 57);
+    padding: 0.5rem;
+    border-radius: 2px;
 }
 
 .desktop-navigation a, a:visited {
@@ -70,30 +90,35 @@ main {
 .desktop-navigation a {
     text-decoration: none;
 }
-/** end **/
+
+/* end */
 
 
 
-/** hero desktop **/
+/* hero desktop */
 .hero-desktop {
     
+    background-image: url(/media/images/home/tamara-menzi-on-unsplash@0.5x.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-mobile {
 
 }
-/** end **/
+
+/* end */
 
 
 
-/** quick nav home **/
+/* quick nav home */
 #quick-nav {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-bottom: 100px;
 }
-
 
 #navigation-bubbles {
     display: flex;
@@ -103,17 +128,17 @@ main {
     align-items: center;
     color: var(--white);
     text-align: center;
-    transition: .5 ease-in-out;
-}
-
-#navigation-bubbles a:hover{
-    transform: scale(1.10);
 }
 
 #navigation-bubbles a {
     text-decoration: none;
     list-style-type: none;
     color: var(--white);
+    transition: transform .8s;
+}
+
+#navigation-bubbles a:hover{
+    transform: scale(1.10);
 }
 
 #navigation-bubbles a img {
@@ -121,8 +146,6 @@ main {
     max-width: 10rem;
 
 }
-
-
 
 #kids-qnav, #involved-qnav, #visit-qnav {
     position: relative;
@@ -139,23 +162,11 @@ main {
  pointer-events: none;
 }
 
-
-}
-
+/* end */
 
 
 
-
-
-/** end **/
-
-
-.separation-line {
-    color: var(--white);
- border-top: 3px solid var(--white);
- width:;
-}
-
+/*  */
 .content {
 
 }
@@ -168,13 +179,43 @@ main {
 
 }
 
+/* end */
+
+
+
+/* Footer */
+
 footer {
-color: var(--white);
-text
+    display: flex;
+    color: var(--white);
+    text-align: center;
+    background-color: black;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
 }
 
+footer *{
+   
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: var(--white);
+}
+
+footer a span{
+    text-decoration: underline;
+}
+
+/* end */
 
 
+/* media queries */
 @media screen and (max-width: 1187px) {
 
     main {
@@ -186,17 +227,22 @@ text
     }
 }
 
+
+
 @media screen and (max-width: 1187px) {
     main {
         width: calc(100% - 30rem);
     }
 
+}
+
+
+
+@media screen and (max-width: 800px) {
+    main {
+         width: calc(100% - 10rem);
     }
-
-
-    @media screen and (max-width: 800px) {
-        main {
-            width: calc(100% - 10rem);
-        }
     
-        }
+}
+
+        /* end */
