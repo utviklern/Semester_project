@@ -182,12 +182,14 @@ hr {
     font-family: var(--dm-sans);
     align-items: center;
     font-size: 1.5rem;
+    
 
 
 }
 
 .mobile-navigation details summary::marker{
     display: none;
+    list-style-image: none;
 }
 
 .active-mobile {
