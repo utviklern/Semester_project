@@ -80,6 +80,11 @@ hr {
 
 
 /* navigation desktop */
+.desktop-navigation, .mobile-navigation{ /*targets both navbars with background color*/
+    border-bottom: 2px solid green;
+    background-color: #E0C45E;
+}
+
 .desktop-navigation .links {
     font-family: var(--dm-sans);
     font-weight: 500;
@@ -89,13 +94,13 @@ hr {
     align-items: center;
     width: 100%;
     height: 100px;
-    background-color: #E0C45E;
+
     list-style-type: none;
 }
 
 .active-desktop {
     border-bottom: 3px solid rgb(57, 13, 57);
-    padding: 0.5rem;
+    padding: .5rem;
     border-radius: 2px;
     font-weight: 600;
 }
@@ -104,7 +109,7 @@ hr {
     text-decoration: none;
 }
 
-.desktop-navigation a, a:visited {
+.desktop-navigation a, a:visited  {
     color: black;
 }
 
@@ -135,18 +140,72 @@ hr {
 /* end */
 
 
+/* mobile navbar */
 
-/* hero desktop */
-.hero-desktop {
-    
-    background-image: url(/media/images/home/tamara-menzi-on-unsplash@0.5x.jpg);
-    height: 600px;
-    background-size: cover;
-    background-position: center;
+.mobile-navigation {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;    
+    font-family: var(--dm-sans);
+    display: none;
 }
 
-.hero-mobile {
+.mobile-navigation ul {
+    display: flex;
+    list-style-type: none;
+    align-items: end;
+    flex-direction: column;
+    font-family: var(--dm-sans);
+    row-gap: .6rem;
+    margin-top: .6rem;
+}
 
+.mobile-navigation li {
+    text-align: end;
+}
+
+.mobile-navigation a {
+    text-decoration: none;
+    color: var(--white);
+    text-align: right;
+}
+
+.mobile-navigation summary i{
+    margin-right: .25rem;
+}
+
+.mobile-navigation details summary {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--white);
+    list-style: none;
+    font-family: var(--dm-sans);
+    align-items: center;
+    font-size: 1.5rem;
+
+
+}
+
+.mobile-navigation details summary::marker{
+    display: none;
+}
+
+.active-mobile {
+    border-bottom: 3px solid rgb(255, 255, 255);
+    padding: .2rem;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+/* hero  */
+.hero {
+    width: 100%;
+}
+
+.hero img{
+    width: 100%;
+
+    
 }
 
 /* end */
@@ -250,11 +309,17 @@ footer a span{
     footer a {
         font-size: 1rem;
     }
+    
+    .desktop-navigation {
+        display: none;
+    }
+    .mobile-navigation{
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 850px) {
-    .desktop-navigation {
-    }
+
     
 }
 
