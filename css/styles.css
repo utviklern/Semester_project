@@ -13,7 +13,7 @@ body{
 main {
     background: rgba(0, 0, 0, .9);
     padding: 1rem 6rem 4rem 6rem;
-    width: calc(100% - 20rem);
+    width: calc(100% - 20%);
     margin: 0 auto;
     border-radius: 10px;
 }
@@ -166,7 +166,7 @@ hr {
 }
 .content-image img {
     border-radius: 1rem;
-    max-width: 400px;
+    max-width: 700px;
 }
 
 .page-content {
@@ -189,21 +189,33 @@ footer {
     text-align: center;
     background-color: black;
     justify-content: space-evenly;
-    align-items: center;
     height: 300px;
     font-family: var(--dm-sans);
-    
+    padding: 2rem 0;
 }
 
-footer *{
-   
+.footer-hours ul, .footer-visit {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem 0;
+}
+
+.footer-visit{
+
+}
+
+.footer-hours ul {
+    margin-top: 1rem;
+    list-style-type: none;
+    
 }
 
 footer a {
     color: var(--white);
     text-decoration: none;
     font-family: var(--dm-sans);
-    font-size: 1.5rem;
+    font-size: 1rem;
+    
 }
 
 footer a:visited {
@@ -221,47 +233,48 @@ footer a span{
 
 @media screen and (max-width: 1850px) {
     main {
-        width: calc(100% - 15rem);
+
         padding: 1rem 4rem 2.5rem 4rem;
     }
 }
 
-@media screen and (max-width: 1350px) {
 
-    main {
-        width: calc(100% - 15rem);
-    }
-}
 
 @media screen and (max-width: 1187px) {
-    main {
-        width: calc(100% - 10rem);
+
+    .content-image img {
+        max-width: 35rem;
     }
+
 
 
 }
 
 /* tablet */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
     main {
-         width: calc(100% - 10rem);
+         width: calc(100% - 15%); 
+    }
+
+    .content-image img {
+        max-width: 25rem;
+    }
+
+    footer a {
+        font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 850px) {
     .desktop-navigation {
-     
     }
-
+    
 }
 
 /* end */
 
 /* phone */
 @media screen and (max-width: 750px) {
-    main {
-        width: calc(100% - 4rem);
-    }
 
     .content-image img {
         max-width: 20rem;
@@ -286,10 +299,8 @@ footer a span{
 
 }
 
-@media screen and (max-width: 463px) {
-    main {
-        width: calc(100% - 4rem);
-    }
+@media screen and (max-width: 500px) {
+
     .content-image img {
         max-width: 15rem;
     }
