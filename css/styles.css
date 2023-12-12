@@ -182,6 +182,7 @@ hr {
     font-family: var(--dm-sans);
     align-items: center;
     font-size: 1.5rem;
+    list-style-image: none;
 
 
 }
