@@ -36,7 +36,6 @@
 #navigation-bubbles a img {
     border-radius: 50%;
     max-width: 20rem;
-
 }
 
 #kids-qnav, #involved-qnav, #visit-qnav {
@@ -47,11 +46,11 @@
 }
 
 .qnav-img-txt {
- position: absolute;
- top: 70%;
- left: 50%;
- transform: translate(-50%, -50%);
- pointer-events: none;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
 }
 
 /* end */
