@@ -41,11 +41,12 @@ main {
     font-size: 3rem;
     font-family: var(--quicksand);
     font-weight: 600;
+    margin: 40px 0 40px 0;
 }
 
 .page-h1, .page-h2-content {
     text-align: center;
-    margin: 40px 0 40px 0;
+
     color: #F4FFE3;
 }
 
@@ -53,6 +54,7 @@ main {
     font-size: 2rem;
     font-family: var(--dm-sans);
     font-weight: 600;
+    margin-bottom: 40px;
 }
 
 .page-p-content {
@@ -230,7 +232,7 @@ footer a span{
 
 
 /* media queries */
-
+/* todo: margin hr mobile, mobile navbar,  */
 @media screen and (max-width: 1850px) {
     main {
 
