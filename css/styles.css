@@ -92,21 +92,30 @@ hr {
     list-style-type: none;
 }
 
-
 .active-desktop {
     border-bottom: 3px solid rgb(57, 13, 57);
     padding: 0.5rem;
     border-radius: 2px;
 }
 
+.desktop-navigation a {
+    text-decoration: none;
+}
+
 .desktop-navigation a, a:visited {
     color: black;
 }
 
+.desktop-navigation ul li{
+    transition: transform .4s;
+}
 
+.desktop-navigation ul li:hover{
+    transform: scale(1.2);
+}
 
-.desktop-navigation a {
-    text-decoration: none;
+.desktop-navigation ul li:first-child{
+    transform: scale(1);
 }
 
 .navbar-logo {
@@ -248,6 +257,7 @@ footer a {
     color: var(--white);
     text-decoration: none;
     font-family: var(--dm-sans);
+    font-size: 1.5rem;
 }
 
 footer a:visited {
@@ -289,7 +299,7 @@ footer a span{
 }
 
 
-
+/* tablet */
 @media screen and (max-width: 900px) {
     main {
          width: calc(100% - 10rem);
@@ -303,7 +313,9 @@ footer a span{
 
 }
 
+/* end */
 
+/* phone */
 @media screen and (max-width: 750px) {
     main {
         width: calc(100% - 4rem);
@@ -326,7 +338,9 @@ footer a span{
         font-size: 1rem;
     }
     /* end */
-
+    .footer a {i
+        font-size: 1rem;
+    }
 
 }
 
