@@ -7,14 +7,13 @@
 
 body{ 
     background-image: url(/media/images/exhibition-spaces/vecteezy_seamless-science-pattern-background-vector-with-molecular_14157493@0.5x.jpg);
-    background-size: ;
     background-position: center;
 }
 
 main {
     background: rgba(0, 0, 0, .9);
-    padding: 1rem 2.5rem 4rem 2.5rem;
-    width: calc(100% - 40rem);
+    padding: 1rem 6rem 4rem 6rem;
+    width: calc(100% - 20rem);
     margin: 0 auto;
     border-radius: 10px;
 }
@@ -81,7 +80,7 @@ hr {
 /* navigation desktop */
 .desktop-navigation .links {
     font-family: var(--dm-sans);
-    font-weight: 600;
+    font-weight: 500;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -92,21 +91,33 @@ hr {
     list-style-type: none;
 }
 
-
 .active-desktop {
     border-bottom: 3px solid rgb(57, 13, 57);
     padding: 0.5rem;
     border-radius: 2px;
+    font-weight: 600;
+}
+
+.desktop-navigation a {
+    text-decoration: none;
 }
 
 .desktop-navigation a, a:visited {
     color: black;
 }
 
+.desktop-navigation ul li{
+    transition: transform .4s;
+}
 
+.desktop-navigation ul li:hover{
+    transform: scale(1.2);
+    font-weight: 800;
+}
 
-.desktop-navigation a {
-    text-decoration: none;
+.desktop-navigation ul li:first-child{
+    transform: scale(1);
+    font-weight: 600;
 }
 
 .navbar-logo {
@@ -140,62 +151,6 @@ hr {
 
 
 
-/* quick nav home */
-#quick-nav {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 4rem;
-}
-
-#navigation-bubbles {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: space-around;
-    align-items: center;
-    color: var(--white);
-    text-align: center;
-}
-
-
-
-#navigation-bubbles a {
-    font-family: var(--quicksand);
-    font-weight: 400;
-    font-size: 1.5rem;
-    text-decoration: none;
-    list-style-type: none;
-    color: var(--white);
-    transition: transform .8s;
-}
-
-#navigation-bubbles a:hover{
-    transform: scale(1.10);
-}
-
-#navigation-bubbles a img {
-    border-radius: 50%;
-    max-width: 12rem;
-
-}
-
-#kids-qnav, #involved-qnav, #visit-qnav {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.qnav-img-txt {
- position: absolute;
- top: 70%;
- left: 50%;
- transform: translate(-50%, -50%);
- pointer-events: none;
-}
-
-/* end */
 
 
 
@@ -248,6 +203,7 @@ footer a {
     color: var(--white);
     text-decoration: none;
     font-family: var(--dm-sans);
+    font-size: 1.5rem;
 }
 
 footer a:visited {
@@ -266,6 +222,7 @@ footer a span{
 @media screen and (max-width: 1850px) {
     main {
         width: calc(100% - 15rem);
+        padding: 1rem 4rem 2.5rem 4rem;
     }
 }
 
@@ -273,12 +230,8 @@ footer a span{
 
     main {
         width: calc(100% - 15rem);
+    }
 }
-
-    
-}
-
-
 
 @media screen and (max-width: 1187px) {
     main {
@@ -288,37 +241,47 @@ footer a span{
 
 }
 
-
-
+/* tablet */
 @media screen and (max-width: 900px) {
     main {
          width: calc(100% - 10rem);
     }
-
-    #navigation-bubbles {
-        flex-direction: column;
-    }
-
-    #involved-qnav, #visit-qnav {
-        margin-top: 40px;
-    }
-    
 }
 
 @media screen and (max-width: 850px) {
     .desktop-navigation {
-        display: hidden;
+     
     }
 
 }
 
+/* end */
 
+/* phone */
 @media screen and (max-width: 750px) {
     main {
         width: calc(100% - 4rem);
     }
+
     .content-image img {
         max-width: 20rem;
+    }
+
+    /* mobile text */
+    .page-h1{
+        font-size: 2.5rem;
+    }
+
+    .page-h2-content {
+        font-size: 1.5rem;
+    }
+
+    .page-p-content {
+        font-size: 1rem;
+    }
+    /* end */
+    .footer a {
+        font-size: 1rem;
     }
 
 }
