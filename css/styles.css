@@ -14,7 +14,7 @@ body{
 main {
     background: rgba(0, 0, 0, .9);
     padding: 1rem 2.5rem 4rem 2.5rem;
-    width: calc(100% - 40rem);
+    width: calc(100% - 20rem);
     margin: 0 auto;
     border-radius: 10px;
 }
@@ -294,20 +294,11 @@ footer a span{
     main {
          width: calc(100% - 10rem);
     }
-
-    #navigation-bubbles {
-        flex-direction: column;
-    }
-
-    #involved-qnav, #visit-qnav {
-        margin-top: 40px;
-    }
-    
 }
 
 @media screen and (max-width: 850px) {
     .desktop-navigation {
-        display: hidden;
+     
     }
 
 }
@@ -317,9 +308,25 @@ footer a span{
     main {
         width: calc(100% - 4rem);
     }
+
     .content-image img {
         max-width: 20rem;
     }
+
+    /* mobile text */
+    .page-h1{
+        font-size: 2.5rem;
+    }
+
+    .page-h2-content {
+        font-size: 1.5rem;
+    }
+
+    .page-p-content {
+        font-size: 1rem;
+    }
+    /* end */
+
 
 }
 

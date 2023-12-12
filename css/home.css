@@ -1,0 +1,16 @@
+
+
+
+
+
+@media screen and (max-width: 900px) {
+   
+    #navigation-bubbles {
+        flex-direction: column;
+    }
+
+    #involved-qnav, #visit-qnav {
+        margin-top: 40px;
+    }
+    
+}
