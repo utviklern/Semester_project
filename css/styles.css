@@ -7,13 +7,12 @@
 
 body{ 
     background-image: url(/media/images/exhibition-spaces/vecteezy_seamless-science-pattern-background-vector-with-molecular_14157493@0.5x.jpg);
-    background-size: ;
     background-position: center;
 }
 
 main {
     background: rgba(0, 0, 0, .9);
-    padding: 1rem 2.5rem 4rem 2.5rem;
+    padding: 1rem 6rem 4rem 6rem;
     width: calc(100% - 20rem);
     margin: 0 auto;
     border-radius: 10px;
@@ -223,6 +222,7 @@ footer a span{
 @media screen and (max-width: 1850px) {
     main {
         width: calc(100% - 15rem);
+        padding: 1rem 4rem 2.5rem 4rem;
     }
 }
 
@@ -280,7 +280,7 @@ footer a span{
         font-size: 1rem;
     }
     /* end */
-    .footer a {i
+    .footer a {
         font-size: 1rem;
     }
 
