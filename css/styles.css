@@ -166,7 +166,7 @@ hr {
 
 .mobile-navigation a {
     text-decoration: none;
-    color: var(--white);
+    color: black;
     text-align: right;
 }
 
@@ -177,7 +177,7 @@ hr {
 .mobile-navigation details summary {
     display: flex;
     justify-content: flex-end;
-    color: var(--white);
+    color: black;
     list-style: none;
     font-family: var(--dm-sans);
     align-items: center;
@@ -191,7 +191,7 @@ hr {
 }
 
 .active-mobile {
-    border-bottom: 3px solid rgb(255, 255, 255);
+    border-bottom: 3px solid #222;
     padding: .2rem;
     border-radius: 2px;
     font-weight: 600;
