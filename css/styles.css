@@ -81,7 +81,7 @@ hr {
 /* navigation desktop */
 .desktop-navigation .links {
     font-family: var(--dm-sans);
-    font-weight: 600;
+    font-weight: 500;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -96,6 +96,7 @@ hr {
     border-bottom: 3px solid rgb(57, 13, 57);
     padding: 0.5rem;
     border-radius: 2px;
+    font-weight: 600;
 }
 
 .desktop-navigation a {
@@ -112,10 +113,12 @@ hr {
 
 .desktop-navigation ul li:hover{
     transform: scale(1.2);
+    font-weight: 800;
 }
 
 .desktop-navigation ul li:first-child{
     transform: scale(1);
+    font-weight: 600;
 }
 
 .navbar-logo {
@@ -149,62 +152,6 @@ hr {
 
 
 
-/* quick nav home */
-#quick-nav {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 4rem;
-}
-
-#navigation-bubbles {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: space-around;
-    align-items: center;
-    color: var(--white);
-    text-align: center;
-}
-
-
-
-#navigation-bubbles a {
-    font-family: var(--quicksand);
-    font-weight: 400;
-    font-size: 1.5rem;
-    text-decoration: none;
-    list-style-type: none;
-    color: var(--white);
-    transition: transform .8s;
-}
-
-#navigation-bubbles a:hover{
-    transform: scale(1.10);
-}
-
-#navigation-bubbles a img {
-    border-radius: 50%;
-    max-width: 12rem;
-
-}
-
-#kids-qnav, #involved-qnav, #visit-qnav {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.qnav-img-txt {
- position: absolute;
- top: 70%;
- left: 50%;
- transform: translate(-50%, -50%);
- pointer-events: none;
-}
-
-/* end */
 
 
 
@@ -283,12 +230,8 @@ footer a span{
 
     main {
         width: calc(100% - 15rem);
+    }
 }
-
-    
-}
-
-
 
 @media screen and (max-width: 1187px) {
     main {
@@ -297,7 +240,6 @@ footer a span{
 
 
 }
-
 
 /* tablet */
 @media screen and (max-width: 900px) {
