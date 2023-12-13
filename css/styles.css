@@ -59,6 +59,11 @@ main {
     font-weight: 400;
 }
 
+.center-txt {
+    text-align: center;
+    list-style-type: none;
+}
+
 /* end */
 
 
