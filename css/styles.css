@@ -13,7 +13,6 @@ main {
     border-radius: 10px;
 }
 
-
 /* end */
 
 
@@ -288,7 +287,6 @@ footer a span{
 
 
 /* media queries */
-/* todo: margin hr mobile, mobile navbar,  */
 @media screen and (max-width: 1850px) {
     main {
 
