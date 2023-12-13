@@ -182,15 +182,10 @@ hr {
     font-family: var(--dm-sans);
     align-items: center;
     font-size: 1.5rem;
-        list-style-image: none;
-
-
-
 }
 
-.mobile-navigation details summary::marker{
-    display: none;
-    list-style-image: none;
+.mobile-navigation details summary::marker{ /*https: //stackoverflow.com/questions/45346806/details-and-summary-delete-or-hide-arrow*/
+    content: "";
 }
 
 .active-mobile {
