@@ -156,7 +156,7 @@ hr {
     align-items: end;
     flex-direction: column;
     font-family: var(--dm-sans);
-    row-gap: .6rem;
+    row-gap: .7rem;
     margin-top: .6rem;
 }
 
