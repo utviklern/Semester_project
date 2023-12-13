@@ -184,8 +184,8 @@ hr {
     font-size: 1.5rem;
 }
 
-.mobile-navigation details summary::marker{ /*https: //stackoverflow.com/questions/45346806/details-and-summary-delete-or-hide-arrow*/
-    content: "";
+.mobile-navigation details summary::-webkit-details-marker{ /*https: //stackoverflow.com/questions/45346806/details-and-summary-delete-or-hide-arrow*/
+    display: none;
 }
 
 .active-mobile {
