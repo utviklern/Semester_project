@@ -4,6 +4,13 @@ body {
     /*Image by Iftikhar Alam on vecteezy*/
 }
 
+#navbar-bold {
+
+    border-radius: .125rem;
+    font-weight: 600;
+    /* text-align: center; */
+}
+
 
 #news-content {
 

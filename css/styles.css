@@ -85,7 +85,7 @@ main {
 /* seperation line */
 .seperation-line {
     border-bottom: 2px solid gray;
-    margin: 4rem 0 var(--size-3rem-48px) 0;
+    margin: 3.85rem 0 var(--size-3rem-48px) 0;
     opacity: .7;
 }
 
@@ -204,7 +204,6 @@ main {
 
 .active-mobile {
     border-bottom: .188rem solid #222;
-    padding: .2rem;
     border-radius: .125rem;
     font-weight: 600;
 }
@@ -337,6 +336,7 @@ footer a span{
     .desktop-navigation {
         display: none;
     }
+
     .mobile-navigation{
         display: flex;
     }
@@ -369,7 +369,7 @@ footer a span{
         font-size: var(--size-1p5rem-24px);
     }
 
-    footer a, .footer-hours ul {
+    .footer-visit a, .footer-hours ul {
         font-size: var(--size-1rem-16px);
     } 
 }
