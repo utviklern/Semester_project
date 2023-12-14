@@ -83,8 +83,7 @@ main {
 
 
 /* seperation line */
-.seperation-line {
-    border-bottom: 2px solid gray;
+hr {
     margin: 3.85rem 0 var(--size-3rem-48px) 0;
     opacity: .7;
 }
