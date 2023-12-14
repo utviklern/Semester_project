@@ -19,11 +19,26 @@ main {
 
 /* variables */
 :root {
+    /* fonts and color */
     --white: #F4FFE3;
     --comfortaa: 'Comfortaa', sans-serif;
     --libre-font: 'Libre Baskerville', serif;
     --quicksand: 'Quicksand', sans-serif;
     --dm-sans: 'DM Sans', sans-serif;
+
+    /* sizes */
+    --size-0p5rem-8px: 0.5rem;
+    --size-1rem-16px: 1rem;
+    --size-1p25rem-20px: 1.25rem;
+    --size-1p5rem-24px: 1.5rem;
+    --size-2rem-32px: 2rem;
+    --size-2p5rem-40px: 2.5rem;
+    --size-3rem-48px: 3rem;
+    --size-3p75rem-60px: 3.75rem;
+    --size-4rem-64px: 4rem;
+    --size-5rem-80px: 5rem;
+    --size-6rem-96px: 6rem;
+    --size-6p25rem100px: 6.25rem;
 }
 
 /* end */
@@ -35,7 +50,7 @@ main {
     font-size: 5rem;
     font-family: var(--quicksand);
     font-weight: 600;
-    margin: 2.5rem 0;
+    margin: var(--size-2p5rem-40px) 0;
 }
 
 .page-h1, .page-h2-content {
@@ -47,13 +62,13 @@ main {
     font-size: 3rem;
     font-family: var(--dm-sans);
     font-weight: 600;
-    margin-bottom: 40px;
+    margin-bottom: var(--size-2p5rem-40px);
 }
 
 .page-p-content {
     color: #F4FFE3;
-    font-size: 1.5rem;
-    margin: 1.5rem 0;
+    font-size: var(--size-1p5rem-24px);
+    margin: var(--size-1p5rem-24px) 0;
     font-family: var(--dm-sans);
     font-weight: 400;
 }
@@ -69,7 +84,7 @@ main {
 
 /* seperation line */
 hr {
-    margin: 3rem 0;
+    margin: var(--size-3rem-48px) 0;
     opacity: .4;
 }
 
@@ -91,15 +106,15 @@ hr {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 100px;
+    height: var(--size-6rem-96px);
 
     list-style-type: none;
 }
 
 .active-desktop {
-    border-bottom: 3px solid rgb(57, 13, 57);
-    padding: .5rem;
-    border-radius: 2px;
+    border-bottom: .188rem solid rgb(57, 13, 57);
+    padding: var(--size-0p5rem-8px);
+    border-radius: .125rem;
     font-weight: 600;
 }
 
@@ -132,7 +147,7 @@ hr {
 }
 
 .navbar-logo img {
-    max-width: 60px;
+    max-width: var(--size-3p75rem-60px);
 }
 
 /* end */
@@ -143,7 +158,7 @@ hr {
 .mobile-navigation {
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;    
+    padding: var(--size-1rem-16px);    
     font-family: var(--dm-sans);
     display: none;
 }
@@ -179,17 +194,17 @@ hr {
     list-style: none;
     font-family: var(--dm-sans);
     align-items: center;
-    font-size: 1.5rem;
+    font-size: var(--size-1p5rem-24px);
 }
 
-.mobile-navigation details summary::-webkit-details-marker{ /*https: //stackoverflow.com/questions/45346806/details-and-summary-delete-or-hide-arrow*/
+.mobile-navigation details summary::-webkit-details-marker{
     display: none;
-}
+} /*removes "details arrow" on mobile devices, https: //stackoverflow.com/questions/45346806/details-and-summary-delete-or-hide-arrow*/
 
 .active-mobile {
-    border-bottom: 3px solid #222;
+    border-bottom: .188rem solid #222;
     padding: .2rem;
-    border-radius: 2px;
+    border-radius: .125rem;
     font-weight: 600;
 }
 
@@ -217,12 +232,13 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 3rem 0;
+    margin: var(--size-3rem-48px) 0;
 }
+
 .content-image img {
-    border-radius: 1rem;
+    border-radius: var(--size-1rem-16px);
     width: 100%;
-    max-width: 700px;
+    max-width: 43.75rem;
 }
 
 
@@ -240,19 +256,25 @@ footer {
     background-color: black;
     justify-content: space-evenly;
     font-family: var(--dm-sans);
-    padding: 2rem 0;
+    padding: var(--size-2rem-32px) 0;
+}
+
+footer h2 {
+    font-size: var(--size-3rem-48px);
+    margin-bottom: var(--size-2rem-32px);
 }
 
 .footer-hours ul, .footer-visit {
     display: flex;
     flex-direction: column;
-    gap: .4rem 0;
+    gap: var(--size-1p5rem-24px) 0;
 }
 
 
 .footer-hours ul {
-    margin-top: 1rem;
+    padding-top: var(--size-1p5rem-24px);
     list-style-type: none;
+    font-size: var(--size-1p5rem-24px);
     
 }
 
@@ -260,7 +282,7 @@ footer a {
     color: var(--white);
     text-decoration: none;
     font-family: var(--dm-sans);
-    font-size: 1rem;
+    font-size: var(--size-1p5rem-24px);
     
 }
 
@@ -278,8 +300,7 @@ footer a span{
 /* media queries */
 @media screen and (max-width: 1850px) {
     main {
-
-        padding: 1rem 4rem 2.5rem 4rem;
+        padding: var(--size-1rem-16px) var(--size-4rem-64px) var(--size-2p5rem-40px) var(--size-4rem-64px);
     }
 }
 
@@ -289,7 +310,14 @@ footer a span{
     }
 
     .page-h2-content{
-        font-size: 2.5rem;
+        font-size: var(--size-2p5rem-40px);
+    }
+
+    footer h2 {
+        font-size: var(--size-2p5rem-40px);
+    }
+    .footer-hours ul, .footer-visit a {
+        font-size: var(--size-1p5rem-24px);
     }
 }
 
@@ -299,8 +327,10 @@ footer a span{
          width: calc(100% - 15%); 
     }
 
-    footer a {
-        font-size: 1rem;
+    footer {
+        flex-direction: column;
+        gap: var(--size-5rem-80px) 0;
+        padding: 7rem 0;
     }
     
     .desktop-navigation {
@@ -308,6 +338,10 @@ footer a span{
     }
     .mobile-navigation{
         display: flex;
+    }
+
+    footer h2 {
+        margin-bottom: var(--size-1rem-16px);
     }
 }
 
@@ -319,30 +353,24 @@ footer a span{
 @media screen and (max-width: 750px) {
 
     .page-h1{
-        font-size: 2.5rem;
+        font-size: var(--size-2p5rem-40px);
     }
 
     .page-h2-content {
-        font-size: 1.5rem;
+        font-size: var(--size-1p5rem-24px);
     }
 
     .page-p-content {
-        font-size: 1rem;
+        font-size: var(--size-1rem-16px);
     }
 
-    footer {
-        flex-direction: column;
-        gap: 3rem 0;
-        padding: 7rem 0;
+    footer h2{
+        font-size: var(--size-1p5rem-24px);
     }
 
-    .footer a {
-        font-size: 1rem;
-    }
+    footer a, .footer-hours ul {
+        font-size: var(--size-1rem-16px);
+    } 
 }
 /* end */
 
-@media screen and (max-width: 500px) {
-
-    
-}
