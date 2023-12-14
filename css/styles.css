@@ -67,7 +67,7 @@ main {
 
 .page-p-content {
     color: #F4FFE3;
-    font-size: var(--size-1p5rem-24px);
+    font-size: var(--size-1p25rem-20px);
     margin: var(--size-1p5rem-24px) 0;
     font-family: var(--dm-sans);
     font-weight: 400;
@@ -238,7 +238,7 @@ main {
 .content-image img {
     border-radius: var(--size-1rem-16px);
     width: 100%;
-    max-width: 43.75rem;
+    max-width: 35rem;
 }
 
 
@@ -274,7 +274,7 @@ footer h2 {
 .footer-hours ul {
     padding-top: var(--size-1p5rem-24px);
     list-style-type: none;
-    font-size: var(--size-1p5rem-24px);
+    font-size: var(--size-1p25rem-20px);
     
 }
 
@@ -282,7 +282,7 @@ footer a {
     color: var(--white);
     text-decoration: none;
     font-family: var(--dm-sans);
-    font-size: var(--size-1p5rem-24px);
+    font-size: var(--size-1p25rem-20px);
     
 }
 
@@ -302,6 +302,9 @@ footer a span{
     main {
         padding: var(--size-1rem-16px) var(--size-4rem-64px) var(--size-2p5rem-40px) var(--size-4rem-64px);
     }
+    .page-h1 {
+        font-size: 4rem;
+    }
 }
 
 @media screen and (max-width: 1650px) {
@@ -315,9 +318,6 @@ footer a span{
 
     footer h2 {
         font-size: var(--size-2p5rem-40px);
-    }
-    .footer-hours ul, .footer-visit a {
-        font-size: var(--size-1p5rem-24px);
     }
 }
 
@@ -343,6 +343,10 @@ footer a span{
 
     footer h2 {
         margin-bottom: var(--size-1rem-16px);
+    }
+
+    .content-image img {
+        max-width: 30rem;
     }
 }
 
@@ -373,5 +377,6 @@ footer a span{
         font-size: var(--size-1rem-16px);
     } 
 }
+
 /* end */
 
