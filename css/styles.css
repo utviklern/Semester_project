@@ -300,7 +300,7 @@ footer a span{
 /* media queries */
 @media screen and (max-width: 1850px) {
     main {
-        padding: var(--size-1rem-16px) var(--size-4rem-64px) var(--size-2p5rem-40px) var(--size-4rem-64px);
+        padding: var(--size-1rem-16px) var(--size-4rem-64px);
     }
     .page-h1 {
         font-size: 4rem;
