@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 4rem;
+    margin-bottom: var(--size-4rem-64px);
 }
 
 #navigation-bubbles {
@@ -27,7 +27,7 @@ body {
 #navigation-bubbles a {
     font-family: var(--quicksand);
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: var(--size-1p5rem-24px);
     text-decoration: none;
     list-style-type: none;
     color: var(--white);
@@ -84,7 +84,7 @@ body {
     }
 
     #involved-qnav, #visit-qnav {
-        margin-top: 40px;
+        margin-top: var(--size-2p5rem-40px);
     }
     
 }
