@@ -211,10 +211,8 @@ hr {
 
 
 
-/*  */
-.content {
+/* content image rules */
 
-}
 .content-image {
     display: flex;
     align-items: center;
@@ -227,13 +225,7 @@ hr {
     max-width: 700px;
 }
 
-.page-content {
 
-}
-
-.page-content {
-
-}
 
 /* end */
 
@@ -257,9 +249,6 @@ footer {
     gap: .4rem 0;
 }
 
-.footer-visit{
-
-}
 
 .footer-hours ul {
     margin-top: 1rem;
