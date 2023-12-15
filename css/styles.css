@@ -352,7 +352,9 @@ footer a span{
 
 /* phone */
 @media screen and (max-width: 750px) {
-
+    main{
+        padding: 1rem 2rem;
+    }
     .page-h1{
         font-size: var(--size-2p5rem-40px);
     }
