@@ -44,7 +44,8 @@ body {
 .news-card img {
     max-width: 23rem;
     width: 100%;
-    border-radius: 20px 0 20px;
+    border-radius: 20px 0 0 0;
+    border-bottom: 1px solid wheat;
 }
 
 .text-wrapper-news-card {
@@ -64,7 +65,7 @@ body {
     padding: 0.6rem 2rem;
     text-align: center;
     background-color: rgb(114, 145, 114);
-    border-radius: 20px 0 20px;
+    border-radius: 0 0 20px 0;
     /* border: .125rem solid var(--white); */
 }
 
