@@ -54,7 +54,7 @@ body {
     gap: 2rem 0;
 }
 .text-wrapper-news-card p {
-    overflow: scroll;
+    /* overflow: scroll; */
     max-height: 13rem;
     line-clamp: 4;
 }
