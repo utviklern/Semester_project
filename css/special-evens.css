@@ -48,7 +48,7 @@ body {
     flex-direction: column;
     padding: 0 var(--size-1rem-16px);
     gap: var(--size-2rem-32px) 0;
-    padding: var(--size-1rem-16px) 0 0 0;
+    padding: var(--size-1rem-16px) var(--size-1rem-16px) 0 var(--size-1rem-16px);
 }
 
 .text-wrapper-news-card p {
@@ -87,8 +87,7 @@ body {
     }
 }
 
-@media screen and (max-width: 950px){
-
+@media screen and (max-width: 964px){
     #news-content {
         padding: 0;
     }

@@ -315,8 +315,14 @@ footer a span{
     }
 }
 
+@media screen and (max-width: 1150px) {
+    .page-h1 {
+        font-size: var(--size-3rem-48px);
+    }
+}
+
 /* tablet */
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 964px) {
 
     main {
          width: 85%; 
