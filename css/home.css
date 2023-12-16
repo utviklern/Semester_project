@@ -12,6 +12,14 @@ body {
     margin-bottom: var(--size-4rem-64px);
 }
 
+#qnav-h2 {
+    text-align: center;
+    font-family: var(--quicksand);
+    font-size: var(--size-3rem-48px);
+    color: var(--white);
+    font-weight: 400;
+}
+
 #navigation-bubbles {
     display: flex;
     flex-direction: row;
@@ -21,8 +29,6 @@ body {
     color: var(--white);
     text-align: center;
 }
-
-
 
 #navigation-bubbles a {
     font-family: var(--quicksand);
@@ -69,15 +75,18 @@ body {
     }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1650px) {
     #navigation-bubbles a img {
         border-radius: 50%;
         max-width: 12rem;
-    
+    }
+
+    #qnav-h2 {
+        font-size: var(--size-2p5rem-40px);
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
    
     #navigation-bubbles {
         flex-direction: column;
@@ -87,4 +96,10 @@ body {
         margin-top: var(--size-2p5rem-40px);
     }
     
+}
+
+@media screen and (max-width: 750px) {
+    #qnav-h2 {
+        font-size: var(--size-2rem-32px);
+    }
 }

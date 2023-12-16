@@ -2,6 +2,8 @@ body {
     background-image: url(/media/images/special-events/vecteezy_minimal-education-pattern-decoration-with-atomic-structure_14157538@0.5x.jpg);
     background-position: center;
     /*Image by Iftikhar Alam on vecteezy*/
+
+
 }
 
 #navbar-bold {
@@ -13,9 +15,10 @@ body {
 
 #news-content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 5rem;
+    /* align-items: baseline; */
 }
 
 #news-content:last-child{
@@ -76,10 +79,24 @@ body {
     margin-bottom: .5rem;
 }
 
-@media screen and (max-width: 950px){
-
+@media screen and (max-width: 1700px) {
     #news-content {
+        padding: 0 6rem;
+    }
+}
+
+@media screen and (max-width: 1420px){
+    #news-content{
         flex-direction: column;
         align-items: center;
     }
 }
+
+@media screen and (max-width: 950px){
+
+    #news-content {
+        padding: 0;
+    }
+}
+
+

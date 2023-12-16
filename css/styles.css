@@ -295,6 +295,7 @@ footer a span{
 
 /* media queries */
 @media screen and (max-width: 1850px) {
+
     main {
         padding: var(--size-1rem-16px) var(--size-4rem-64px);
     }
@@ -304,23 +305,21 @@ footer a span{
 }
 
 @media screen and (max-width: 1650px) {
+
     .page-h1{
         font-size: 3.5rem;
     }
 
-    .page-h2-content{
-        font-size: var(--size-2p5rem-40px);
-    }
-
-    footer h2 {
+    .page-h2-content, footer h2 {
         font-size: var(--size-2p5rem-40px);
     }
 }
 
 /* tablet */
 @media screen and (max-width: 950px) {
+
     main {
-         width: calc(100% - 15%); 
+         width: 85%; 
     }
 
     footer {
@@ -352,29 +351,23 @@ footer a span{
 
 /* phone */
 @media screen and (max-width: 750px) {
+
     main{
         padding: 1rem 2rem;
     }
+
     .page-h1{
         font-size: var(--size-2p5rem-40px);
     }
 
-    .page-h2-content {
-        font-size: var(--size-1p5rem-24px);
+    .page-h2-content, footer h2 {
+        font-size: var(--size-2rem-32px);
     }
 
-    .page-p-content {
-        font-size: var(--size-1rem-16px);
-    }
-
-    footer h2{
-        font-size: var(--size-1p5rem-24px);
-    }
-
-    .footer-visit a, .footer-hours ul {
+    .page-p-content, .footer-visit a, .footer-hours ul {
         font-size: var(--size-1rem-16px);
     } 
 }
-
 /* end */
+
 
