@@ -10,7 +10,7 @@ main {
     padding: var(--size-1rem-16px) var(--size-6rem-96px);
     width: 80%;
     margin: 0 auto;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 /* end */
@@ -45,7 +45,7 @@ main {
 
 /* text */
 .page-h1{
-    font-size: 5rem;
+    font-size: var(--size-5rem-80px);
     font-family: var(--quicksand);
     font-weight: 600;
     margin: var(--size-2p5rem-40px) 0;
@@ -57,7 +57,7 @@ main {
 }
 
 .page-h2-content { 
-    font-size: 3rem;
+    font-size: var(--size-3rem-48px);
     font-family: var(--dm-sans);
     font-weight: 600;
     margin-bottom: var(--size-2p5rem-40px);
@@ -92,7 +92,7 @@ hr {
 
 /* navigation desktop */
 .desktop-navigation, .mobile-navigation{ /*targets both navbars with background color*/
-    border-bottom: 2px solid green;
+    border-bottom: .13rem solid green;
     background-color: #E0C45E;
 }
 
@@ -300,7 +300,7 @@ footer a span{
         padding: var(--size-1rem-16px) var(--size-4rem-64px);
     }
     .page-h1 {
-        font-size: 4rem;
+        font-size: var(--size-4rem-64px);
     }
 }
 
@@ -353,7 +353,7 @@ footer a span{
 @media screen and (max-width: 750px) {
 
     main{
-        padding: 1rem 2rem;
+        padding: var(--size-1rem-16px) var(--size-2rem-32px);
         width: 90%;
     }
 
