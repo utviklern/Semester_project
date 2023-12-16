@@ -1,17 +1,13 @@
 body {
     background-image: url(/media/images/special-events/vecteezy_minimal-education-pattern-decoration-with-atomic-structure_14157538@0.5x.jpg);
-    background-position: center;
     /*Image by Iftikhar Alam on vecteezy*/
-
-
+    background-attachment: fixed;
 }
 
 #navbar-bold {
-
     border-radius: .125rem;
     font-weight: 600;
 }
-
 
 #news-content {
     display: flex;
@@ -25,8 +21,6 @@ body {
     align-content: flex-start;
 }
 
-
-
 .news-card {
     display: flex;
     flex-direction: column;
@@ -34,7 +28,6 @@ body {
     row-gap: var(var(--size-3rem-48px));
     color: var(--white);
     max-width: 23rem;
-    background-color: rgb(166, 111, 15);
     align-items: center;
     width: 100%;
     border-radius: var(--size-1p25rem-20px) 0 var(--size-1p25rem-20px);
@@ -55,7 +48,9 @@ body {
     flex-direction: column;
     padding: 0 var(--size-1rem-16px);
     gap: var(--size-2rem-32px) 0;
+    padding: var(--size-1rem-16px) 0 0 0;
 }
+
 .text-wrapper-news-card p {
     max-height: 13rem;
     line-clamp: 4;
@@ -65,9 +60,10 @@ body {
     width: 100%;
     padding: .6rem var(--size-2rem-32px);
     text-align: center;
-    background-color: rgb(24, 58, 70);
+    background-color: rgba(24, 39, 70, 0.6);
     border-radius: 0 0 var(--size-1p25rem-20px) 0;
-    margin-top: 1rem;
+    margin-top: var(--size-1rem-16px);
+    border: 1px solid var(--white);
 }
 
 .text-wrapper-news-card details {

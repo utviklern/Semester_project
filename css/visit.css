@@ -1,5 +1,5 @@
 body {
     background-image: url(/media/images/visit/vecteezy_modern-education-pattern-background-with-atomic-modules_13476328@0.5x.jpg);
-    background-position: center;
     /*Image by Iftikhar Alam on vecteezy*/
+    background-attachment: fixed;
 }
