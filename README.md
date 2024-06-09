@@ -28,6 +28,8 @@ Each page has an unique static background that appels to the youngest target gro
 
 The best thing i learned from this project is the simplicity you get if you think ahead and plan the structure of the page you`re about to make.
 
+Read more on my portfolio page: https://utviklern.netlify.app/
+
 
 ## Built With
 
